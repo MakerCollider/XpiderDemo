@@ -25,7 +25,7 @@ Item {
     height: 400
 
     Label {
-      text: qsTr("Second page")
+      text: qsTr("Empty")
       anchors.centerIn: parent
     }
 }

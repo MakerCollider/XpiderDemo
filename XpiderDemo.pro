@@ -1,4 +1,4 @@
-QT += quick
+QT += quick multimedia network
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -17,7 +17,7 @@ SOURCES += main.cpp \
     xpider_center.cpp \
     xpider_comm.cpp \
     xpider_info.cpp \
-    xpider_protocol.cpp \
+    xpider_protocol.cpp
 
 RESOURCES += qml.qrc
 
@@ -37,4 +37,4 @@ HEADERS += \
     xpider_center.h \
     xpider_comm.h \
     xpider_info.h \
-    xpider_protocol.h \
+    xpider_protocol.h

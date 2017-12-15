@@ -19,7 +19,7 @@
 
 import QtQuick 2.4
 import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.2
+import QtQuick.Controls 2.0
 
 Item {
   id: item1
@@ -151,26 +151,26 @@ Item {
 
     Text {
       id: name_value
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
 
     Text {
       id: obstacle_value
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
     Text {
       id: voltage_value
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
     Text {
       id: sound_level
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
@@ -208,28 +208,70 @@ Item {
 
     Text {
       id: uuid_value
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
 
     Text {
       id: version_value
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
     Text {
       id: firmware_value
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
     Text {
       id: controller_value
-      text: qsTr("Text")
+      text: qsTr("NULL")
       font.pixelSize: 16
     }
 
+  }
+
+  Text {
+    id: text2
+    x: 115
+    y: 223
+    text: qsTr("LED")
+    anchors.verticalCenter: led_slider.verticalCenter
+    anchors.right: led_slider.left
+    anchors.rightMargin: 10
+    font.pixelSize: 12
+  }
+
+  Text {
+    id: text3
+    x: 115
+    y: 262
+    text: qsTr("Eye")
+    anchors.verticalCenter: eye_slider.verticalCenter
+    anchors.right: eye_slider.left
+    anchors.rightMargin: 10
+    font.pixelSize: 12
+  }
+
+  Text {
+      id: text4
+      y: 268
+      text: qsTr("Eye")
+      anchors.verticalCenter: eye_slider.verticalCenter
+      anchors.left: eye_slider.right
+      anchors.leftMargin: 10
+      font.pixelSize: 12
+  }
+
+  Text {
+      id: text5
+      y: 223
+      text: qsTr("LED")
+      anchors.verticalCenter: led_slider.verticalCenter
+      anchors.left: eye_slider.right
+      anchors.leftMargin: 10
+      font.pixelSize: 12
   }
 }

@@ -23,6 +23,7 @@
 #include <QQmlApplicationEngine>
 
 #include "xpider_center.h"
+// #include "xpider_camera.h"
 
 int main(int argc, char *argv[])
 {
@@ -34,6 +35,8 @@ int main(int argc, char *argv[])
   XpiderCenter xpider_center;
   QQmlContext * ctx = engine.rootContext();
   ctx->setContextProperty("xpider_center",&xpider_center);
+
+  // qmlRegisterType<XpiderCamera>("Xpider", 1, 0, "XCamera");
 
   engine.load(QUrl(QLatin1String("qrc:/main.qml")));
   if (engine.rootObjects().isEmpty())
